@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasymbek Orazaly — Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="#about" class="logo">KO</a>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle dark and light theme"
+        >
+          Black/White Mode
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 1: About Me -->
+      <section id="about" class="section">
+        <div class="container about-container">
+          <img
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=240&q=80"
+            alt="Portrait of Kasymbek Orazaly"
+            class="avatar"
+            width="140"
+            height="140"
+          />
+          <div class="about-info">
+            <h1>Kasymbek Orazaly</h1>
+            <p>
+              I am a 3rd-year university student focused on frontend web
+              development, semantic HTML5 structure, responsive UI systems, and
+              vanilla JavaScript.
+            </p>
+            <p>
+              This portfolio presents my foundational implementations, clean CSS
+              styling architectures, and accessible interactive interfaces built
+              from scratch.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>Responsive Profile Card</h3>
+              <p>
+                Vanilla HTML and CSS layout using box model rules, Flexbox
+                alignment, and interactive button state handling.
+              </p>
+              <a
+                href="https://constantXD.github.io/iwamad-practice/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </article>
+
+            <article class="project-card">
+              <h3>React &amp; TypeScript App</h3>
+              <p>
+                Modular personal dashboard rebuilt with typed props, dynamic
+                skill list rendering, and isolated components.
+              </p>
+              <a
+                href="https://github.com/constantXD/iwamad-practice/tree/week-03"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Source Code</a
+              >
+            </article>
+
+            <article class="project-card">
+              <h3>Router &amp; Context SPA</h3>
+              <p>
+                Multi-route single page application featuring React Router,
+                global context state, and automated component tests.
+              </p>
+              <a
+                href="https://constantXD.github.io/iwamad-practice/skills"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Contact Form -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form id="contact-form" novalidate>
+            <p id="form-status" class="form-status" role="alert"></p>
+
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Kasymbek Orazaly"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="k_orazaly@kbtu.kz"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Kasymbek Orazaly.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
